@@ -1,0 +1,30 @@
+#.!/bin/bash
+#by ibnu lasawali palu kota
+clear
+adb reboot
+echo -e "                            \e[31;1m###\e[0m"
+echo -e "                            \e[31;1m###\e[0m"
+echo -e "                  \e[32;1mhp sedang di mulai ulang\e[0m"
+echo -e "                            \e[31;1m###\e[0m"
+echo -e "                            \e[31;1m###\e[0m"
+echo -e "     \e[32;1mproses butuh waktu 15-30 detik untuk sampai ke menu\e[0m"
+echo -e "                \e[32;1mdan mendapatkan ip internet\e[0m"
+sleep 10
+clear
+echo -e "                             \e[31;1m###\e[0m"
+echo -e "                             \e[31;1m###\e[0m"
+echo -e "               \e[32;1msedang mengecek ip internet di hp\e[0m"
+sleep 3
+echo -e "                            \e[33;1m. . .\e[0m"
+sleep 3
+echo -e "                            \e[33;1m. . .\e[0m"
+sleep 3
+echo -e "                            \e[33;1m. . .\e[0m"
+sleep 3     
+echo -e "                            \e[33;1m. . .\e[0m"
+sleep 3
+echo -e "                            \e[33;1m. . .\e[0m"
+sleep 3
+echo -e "                            \e[33;1m. . .\e[0m"
+
+iphp

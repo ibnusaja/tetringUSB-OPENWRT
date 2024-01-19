@@ -1,0 +1,14 @@
+#!/bin/bash
+#by ibnu laswali palu kota
+
+clear
+adb shell am start -n xyz.easypro.httpcustom/team.dev.epro.apkcustom.MainActivity
+sleep 2
+echo -e "                          \e[31;1m###\e[0m"
+echo -e "                          \e[31;1m###\e[0m"
+echo -e "                   \e[32;1mHttp Costum terbuka\e[0m"
+echo -e "                          \e[31;1m###\e[0m"
+echo -e "                          \e[31;1m###\e[0m"
+echo -e "   \e[32;1msilahkan aktifkan fungsi HCostum jika belum berjalan\e[0m"
+sleep 3
+tetring

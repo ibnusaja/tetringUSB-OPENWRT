@@ -1,0 +1,11 @@
+#!/bin/bash
+#by ibnu palu
+clear
+adb shell input keyevent 26
+echo -e "                          \e[31;1m###\e[0m"
+echo -e "                          \e[31;1m###\e[0m"
+echo -e "              \e[32;1mhp dalam posisi layar nyala/mati\e[0m"
+echo -e "              \e[32;1msilahkan anda mengira ngira sendiri:v\e[0m"
+sleep 2
+tetring
+

@@ -1,0 +1,19 @@
+#!/bin/bash
+clear
+adb tcpip 5555
+sleep 3
+echo -e "            \e[31;1m#######\e[0m"
+echo -e "            \e[31;1m#######\e[0m"
+echo -e "            \e[31;1m#######\e[0m"
+echo -e "     \e[32;1mport ADB 5555 berhasil diaktifkan\e[0m"
+sleep 3
+adb shell service call connectivity 33 i32 1 s16 paluKotaku
+echo -e "            \e[31;1m#######\e[0m"
+echo -e "            \e[31;1m#######\e[0m"
+echo -e "     \e[32;1mhp berhasil terhubung dalam MODE USB tetring\e[0m"
+sleep 1
+ping -w 2  8.8.8.8
+
+echo " jika ping error, ulangi perintah" 
+sleep 2
+tetring

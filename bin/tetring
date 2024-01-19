@@ -1,0 +1,56 @@
+#!/bin/bash
+#by ibnu lasawali palu kota
+clear;
+echo;
+echo;
+
+ibnusulteng=$('suhuhp')
+ibnusulteng=$(echo $ibnusulteng|awk -F 'CPU :' '{print $2}'|awk -F 'suhu GPU' '{print $1}')
+echo -e "              \e[32;1mSuhu CPU HP      :$ibnusulteng°C\e[0m"
+
+palukota=$('suhuhp')
+palukota=$(echo $palukota|awk -F 'GPU :' '{print $2}'|awk -F ' keterangan' '{print $1}')
+echo -e "              \e[32;1mSuhu GPU HP      :$palukota °C\e[0m"
+
+ibnulasawali=$('suhuhp')
+ibnulasawali=$(echo $ibnulasawali|awk -F 'temperature:' '{print $2}'|awk -F ' technology' '{print $1}')
+echo -e "              \e[32;1mSuhu Battery HP  : $((ibnulasawali/10)) °C\e[0m"
+
+baterai=$('suhuhp')
+baterai=$(echo $baterai|awk -F ' level: ' '{print $2}'|awk -F 'scale: ' '{print $1}')
+echo -e "              \e[32;1mLevel battery HP : $baterai %\e[0m"
+
+echo;
+ 
+echo -e " \e[32;1m########################################################\e[0m"
+echo -e " \e[32;1m##\e[0m         \e[35;1mDaftar Perintah Thetring USB HP.           \e[0m\e[32;1m##\e[0m"
+echo -e " \e[32;1m########################################################\e[0m"
+echo -e " \e[32;1m##\e[0m \e[36;3mtetring     \e[0m  \e[36;1m(Kembali ke Menu utama)\e[0m              \e[32;1m##\e[0m"
+echo -e " \e[32;1m##\e[0m \e[36;3mreboothp    \e[0m  \e[36;1m(me-Reboot HP modem)\e[0m                 \e[32;1m##\e[0m"
+echo -e " \e[32;1m##\e[0m \e[36;3miphp        \e[0m  \e[36;1m(Cek ip local internet hp)\e[0m           \e[32;1m##\e[0m"  
+echo -e " \e[32;1m##\e[0m \e[36;3mtetringusb  \e[0m  \e[36;1m(menghidupkan THETRING USB)\e[0m          \e[32;1m##\e[0m"
+echo -e " \e[32;1m##\e[0m \e[36;3mnyala       \e[0m  \e[36;1m(mengidupkan mematikan layar)\e[0m        \e[32;1m##\e[0m"
+echo -e " \e[32;1m##\e[0m \e[36;3msuhuhp      \e[0m  \e[36;1m(me-Ngecek suhu hp lengkap)\e[0m          \e[32;1m##\e[0m"
+echo -e " \e[32;1m##\e[0m \e[36;3mpesawat     \e[0m  \e[36;1m(menghidup/mematikan mode pesawat)\e[0m   \e[32;1m##\e[0m"
+echo -e " \e[32;1m##\e[0m \e[36;3mremot       \e[0m  \e[36;1m(mengaktifkan port remote adb 5555)\e[0m  \e[32;1m##\e[0m"
+echo -e " \e[32;1m##\e[0m \e[36;3mvpnhot      \e[0m  \e[36;1m(membuka aplikasi vpn hotspot)\e[0m       \e[32;1m##\e[0m"
+echo -e " \e[32;1m##\e[0m \e[36;3mvpnhots     \e[0m  \e[36;1m(mengaktifkan fungsi vpn hotspot)\e[0m    \e[32;1m##\e[0m"
+echo -e " \e[32;1m##\e[0m \e[36;3mwgbuka      \e[0m  \e[36;1m(buka aplikasi Wireguard)\e[0m            \e[32;1m##\e[0m"
+echo -e " \e[32;1m##\e[0m \e[36;3mwgaktif     \e[0m  \e[36;1m(mengakifkan fungsi wg)\e[0m              \e[32;1m##\e[0m"
+echo -e " \e[32;1m##\e[0m \e[36;3mkpnbuka     \e[0m  \e[36;1m(buka aplikasi kpn rev)\e[0m              \e[32;1m##\e[0m"
+echo -e " \e[32;1m##\e[0m \e[36;3mkpnaktif    \e[0m  \e[36;1m(mengaktifkan fungsi kpn rev)\e[0m        \e[32;1m##\e[0m"
+echo -e " \e[32;1m##\e[0m \e[36;3movpnbuka    \e[0m  \e[36;1m(buka aplikasi open VPN tunnel)\e[0m      \e[32;1m##\e[0m"
+echo -e " \e[32;1m##\e[0m \e[36;3movpnaktif   \e[0m  \e[36;1m(mengaktifkan fungsi openVPN)\e[0m        \e[32;1m##\e[0m"
+echo -e " \e[32;1m##\e[0m \e[36;3mhcbuka      \e[0m  \e[36;1m(buka aplikasi Http costum tunnel)\e[0m   \e[32;1m##\e[0m"
+echo -e " \e[32;1m##\e[0m \e[36;3mhcaktif    \e[0m   \e[36;1m(mengaktifkan fungsi HTTP COSTUM)\e[0m    \e[32;1m##\e[0m"
+echo -e " \e[32;1m##\e[0m \e[36;3mskirinsut   \e[0m  \e[36;1m(nge ss hp, trsmpan di /root/project)\e[0m\e[32;1m##\e[0m"
+echo -e " \e[32;1m##\e[0m \e[36;3mmati        \e[0m  \e[36;1m(mematikan salah satu layanan)\e[0m       \e[32;1m##\e[0m"
+echo -e " \e[32;1m########################################################\e[0m"
+echo -e "       \e[33;1mCurrent versi 0.2 Beta-diMod by ibnu official\e[0m"
+echo -e "                  \e[33;1mLast update 19-12-2020\e[0m"
+echo -e "             \e[36;1mCopyrightCode\e[0m\e[31;1m@\e[0m\e[34;1m FB\e[0m\e[31;1m:\e[0m\e[35;1mBang Ryan fauzi\e[0m"
+echo -e "                       ### ### ###"
+echo -e "                       ### ### ###"
+echo -e  "\e[33;1mTAMPILAN INI SAYA REMAKE dari SCRIPT xderm by \e[32;1mryan fauzi."
+echo -e "      \e[33;1msaya (\e[31;1mIbnu official) \e[33;1mhanya mengedit seperlunya\e[0m"
+echo;

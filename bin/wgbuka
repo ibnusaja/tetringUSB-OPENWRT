@@ -1,0 +1,22 @@
+#!/bin/bash
+#by ibnu laswali palu kota
+
+clear
+adb shell am start -n com.wireguard.android/.activity.MainActivity
+sleep 1
+echo -e "                           \e[31;1m###\e[0m"
+echo -e "                           \e[31;1m###\e[0m"
+echo -e "                    \e[32;1mWireguard terbuka\e[0m"
+echo -e "                           \e[31;1m###\e[0m"
+echo -e "                           \e[31;1m###\e[0m"
+echo -e "     \e[32;1msilahkan aktifkan fungsi wg bila belum berjalan\e[0m"
+echo;
+
+ip=$('tun0a')
+ip=$(echo $ip|awk -F 'inet addr:' '{print $2}'|awk -F ' P-t' '{print $1}')
+echo -e "             \e[33;1mIP Vpn interface tun0: $ip \e[0m"
+echo;
+echo -e "                            \e[31;1m###\e[0m"
+sleep 4
+
+tetring

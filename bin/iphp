@@ -1,0 +1,36 @@
+#.!/bin/bash
+#by ibnu lasawali palu kota
+
+while true; do
+clear
+echo -e "                             \e[31;1m###\e[0m"
+echo -e "                             \e[31;1m###\e[0m"
+echo -e "               \e[32;1msedang mengecek ip internet di hp\e[0m"
+echo -e "                            \e[33;1m. . .\e[0m"
+sleep 1
+echo -e "                            \e[33;1m. . .\e[0m"
+sleep 1
+echo -e "                            \e[33;1m. . .\e[0m"
+echo -e "                            \e[33;1m. . .\e[0m"
+
+
+ip=$('ipdata')
+ip=$(echo $ip|awk -F 'inet addr:' '{print $2}'|awk -F 'Mask' '{print $1}')
+echo -e "              \e[32;1mIPv4 internet HP anda: $ip \e[0m"
+echo;
+
+ip=$('ipdata')
+ip=$(echo $ip|awk -F ' inet6 addr:' '{print $2}'|awk -F 'Scope' '{print $1}')
+echo -e "      \e[32;1mIPv6 internet HP anda: $ip \e[0m"
+echo;
+
+ip=$('tun0a')
+ip=$(echo $ip|awk -F 'inet addr:' '{print $2}'|awk -F ' P-t' '{print $1}')
+echo -e "          \e[32;1mIP Vpn tun0 internet HP anda: $ip \e[0m"
+echo;
+echo -e "                            \e[31;1m# ## #\e[0m"
+
+echo -e "        \e[33;1mIP tidak muncul? ingin cek ulang IP?(TEKAN ENTER)\e[0m"
+echo -e "                  \e[33;1mingin keluar ? (Tekan Ctrl+C)\e[0m";read x
+echo -e "                            \e[31;1m# ## #\e[0m"
+ done

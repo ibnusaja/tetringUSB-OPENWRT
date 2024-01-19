@@ -1,0 +1,32 @@
+#!/bin/bash
+#by ibnu lasawali palu kota
+
+
+clear
+adb shell input tap x y
+echo -e "                            \e[31;1m###\e[0m"
+echo -e "                            \e[31;1m###\e[0m"
+echo -e "                  \e[32;1mKpn rev mungkin aktif\e[0m"
+echo -e "                            \e[31;1m###\e[0m"
+echo -e "                 \e[32;1mcek ip di interface tun0\e[0m"
+echo -e "                            \e[31;1m###\e[0m"
+echo -e "                            \e[31;1m###\e[0m"
+echo -e "               \e[32;1mpastikan ip nya sesuai config\e[0m"
+echo -e "                            \e[31;1m###\e[0m"
+echo;
+sleep 4
+
+ip=$('tun0a')
+ip=$(echo $ip|awk -F 'inet addr:' '{print $2}'|awk -F ' P-t' '{print $1}')
+echo -e "             \e[33;1mIP Vpn interface tun0: $ip \e[0m"
+echo;
+echo -e "                            \e[31;1m###\e[0m"
+
+echo -e "               \e[32;1mapakah ada?, jika ada berarti konek\e[0m"
+echo -e "     \e[32;1mjika tdk, tulis perintah 'nyala' kemudian 'kpnaktif'\e[0m"
+echo -e "                            \e[31;1m###\e[0m"
+echo -e "                            \e[31;1m###\e[0m"
+
+echo " perintah ini belum jalan dengan sempurna, "
+echo "mohon tonton tutorialnya di https://www.youtube.com/channel/UCNFg4QGpaw60d8lN1N7uvcQ (copas di browser)"
+echo " silahkan nonton yg berjudul "hp outdoor 3b" "

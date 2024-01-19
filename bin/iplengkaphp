@@ -1,0 +1,3 @@
+#!/bin/bash
+#by ibnu lasawali palu kota
+adb shell ifconfig

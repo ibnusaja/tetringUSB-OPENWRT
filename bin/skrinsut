@@ -1,0 +1,15 @@
+#/bin/bash
+#by ibnu laswali palu kota
+
+while true; do
+adb shell screencap /sdcard/screenshoot.png
+echo "           sedang screenshoot "
+sleep 2
+
+adb pull /sdcard/screenshoot.png /root/project/
+echo " screenshot di pindah ke directory /root/project "
+sleep 2
+
+echo " ulangi screnshoot ? , tekan enter . berhenti, tekan CTRL + C"
+read x
+done

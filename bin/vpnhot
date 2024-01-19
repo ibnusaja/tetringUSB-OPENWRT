@@ -1,0 +1,13 @@
+#./bin/bash
+#by ibnu
+clear
+adb shell am start -n be.mygod.vpnhotspot/.MainActivity
+echo -e "            \e[31;1m# ## #\e[0m"
+echo "#################################################"
+echo -e "            \e[31;1m# ## #\e[0m"
+echo -e "     \e[32;1maplikasi vpn hotspot terbuka\e[0m"
+echo -e "            \e[31;1m# ## #\e[0m"
+echo -e "     \e[32;1msilahkan aktifkan fungsi vpnHotspotnya\e[0m"
+sleep 4
+tetring
+

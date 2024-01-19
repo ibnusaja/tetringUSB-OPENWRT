@@ -1,0 +1,8 @@
+#!/bin/bash
+#by ibnu lasawali palu kota
+clear
+adb shell ifconfig rmnet_data0
+
+
+#script ini bertujuan menampilkan ip local internet dari terface rmnet_data0
+

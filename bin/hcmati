@@ -1,0 +1,8 @@
+#!/bin/bash
+#by ibnu lasawali palu kota
+
+echo;
+adb shell am force-stop xyz.easypro.httpcustom;
+sleep 2
+echo -e "       \e[33;1mAplikasi Http Costum telah diberhentikan\e[0m"
+echo;

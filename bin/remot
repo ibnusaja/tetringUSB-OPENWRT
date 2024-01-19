@@ -1,0 +1,14 @@
+#.!/bin/bash
+#by ibnu
+
+clear
+adb tcpip 5555
+echo;
+echo;
+
+echo "             port adb 5555 telah aktif"
+echo "                     ## ##  "
+echo "                     ## ##  "
+sleep 2
+
+tetring

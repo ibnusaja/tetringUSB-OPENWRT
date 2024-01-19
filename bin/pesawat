@@ -1,0 +1,19 @@
+#!/bin/bash
+#by ibnu lasawali palu kota
+
+echo;
+echo "               sedang menghidup/mematikan layar "
+echo "             lihat iphp, apakah muncul atau tidak "
+echo "  jika muncul , berarti mode pesawat MATI, begitu pula sebaliknya "
+echo;
+
+adb shell am start -a android.settings.AIRPLANE_MODE_SETTINGS
+sleep 2
+adb shell input tap x y
+sleep 3
+
+#iphp
+
+echo " perintah ini belum jalan dengan sempurna, "
+echo "mohon tonton tutorialnya di https://www.youtube.com/channel/UCNFg4QGpaw60d8lN1N7uvcQ (copas di browser)"
+echo " silahkan nonton yg berjudul "hp outdoor 3b" "

@@ -1,0 +1,14 @@
+#!/bin/bash
+#by ibnu laswali palu kota
+
+clear
+adb shell am start -n kpn.soft.dev.kpnrevolution/.activities.MainActivity
+sleep 1
+echo -e "                          \e[31;1m###\e[0m"
+echo -e "                          \e[31;1m###\e[0m"
+echo -e "                    \e[32;1mKpn rev terbuka\e[0m"
+echo -e "                          \e[31;1m###\e[0m"
+echo -e "                          \e[31;1m###\e[0m"
+echo -e "   \e[32;1msilahkan aktifkan fungsi kpn rev jika belum berjalan\e[0m"
+sleep 3
+tetring

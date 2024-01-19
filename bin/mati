@@ -1,0 +1,19 @@
+#!/bin/bash
+#by ibnu lasawali palu kota
+
+clear
+echo;
+echo;
+
+echo -e " \e[32;1m########################################################\e[0m"
+echo -e " \e[32;1m##\e[0m        \e[35;1mDaftar Perintah me'mati'kan layanan         \e[0m\e[32;1m##\e[0m"
+echo -e " \e[32;1m########################################################\e[0m"
+echo -e " \e[32;1m##\e[0m \e[36;3mkpnmati     \e[0m  \e[36;1m(me-Matikan layanan KPN-rev)\e[0m         \e[32;1m##\e[0m"
+echo -e " \e[32;1m##\e[0m \e[36;3mwgmati      \e[0m  \e[36;1m(me-Matikan layanan Wireguard)\e[0m       \e[32;1m##\e[0m" 
+echo -e " \e[32;1m##\e[0m \e[36;3movpnmati    \e[0m  \e[36;1m(me-Matikan layanan openVPN)\e[0m         \e[32;1m##\e[0m"
+echo -e " \e[32;1m##\e[0m \e[36;3mhcmati      \e[0m  \e[36;1m(me-Matikan layanan Http Costum)\e[0m     \e[32;1m##\e[0m"
+echo -e " \e[32;1m##\e[0m \e[36;3mtetring     \e[0m  \e[36;1m(Kembali ke Menu utama)\e[0m              \e[32;1m##\e[0m"
+echo -e " \e[32;1m########################################################\e[0m"
+
+echo;
+echo;

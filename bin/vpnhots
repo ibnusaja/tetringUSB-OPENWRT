@@ -1,0 +1,22 @@
+#./bin/bash
+#by ibnu
+clear
+adb shell input tap x y
+echo -e "            \e[31;1m# ## #\e[0m"
+echo "#################################################"
+echo -e "            \e[31;1m# ## #\e[0m"
+echo -e "     \e[32;1mfungsi vpn hotspot AKTIF\e[0m"
+echo -e "            \e[31;1m# ## #\e[0m"
+echo -e "     \e[32;1msilahkan berselancar dengan koneksi VPN\e[0m"
+echo -e "            \e[31;1m# ## #\e[0m"
+echo -e "  \e[32;1mjika tidak bisa terhubung, silahkan tulis 'nyala'\e[0m"
+echo -e "     \e[32;1matau pastikan interface ' tun0 ' ada\e[0m"
+echo -e "       \e[32;1mkemudian ulangi perintah ini\e[0m"
+
+sleep 4
+
+#tetring
+
+echo " perintah ini belum jalan dengan sempurna, "
+echo "mohon tonton tutorialnya di https://www.youtube.com/channel/UCNFg4QGpaw60d8lN1N7uvcQ (copas di browser)"
+echo " silahkan nonton yg berjudul "hp outdoor 3b" "

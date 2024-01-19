@@ -1,0 +1,14 @@
+#.!/bin/sh
+#by ibnu laswali palu kota
+
+echo suhu CPU :
+adb shell cat sys/class/thermal/thermal_zone1/temp
+echo;
+echo suhu GPU :
+adb shell cat sys/class/thermal/thermal_zone9/temp
+echo;
+echo keterangan lengkap battery :
+echo;
+adb shell dumpsys battery
+
+
